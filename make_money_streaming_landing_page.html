@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make Money Streaming - Top-tier webcam modeling agency offering 1-on-1 mentorship and proven platform strategies.">
+    <meta name="keywords" content="webcam modeling agency, cam model jobs, make money streaming, camming mentorship, creator agency">
+    <title>Make Money Streaming | Start Broadcasting Today</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #ff66b3;
+            --primary-dark: #ff4da6;
+            --primary-light: #ffcce5;
+            --secondary-color: #10B981;
+            --navy-dark: #0a192f;
+            --text-color: #1F2937;
+            --text-muted: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --border-color: #E5E7EB;
+            --font-main: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); color: var(--text-color); line-height: 1.6; background-color: var(--bg-white); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        .section-padding { padding: 100px 0; }
+        .bg-light { background-color: var(--bg-light); }
+        .text-center { text-align: center; }
+
+        /* Navbar */
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: white; padding: 15px 0; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--navy-dark); }
+        .logo .dot { color: var(--primary-color); }
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a { font-weight: 600; color: var(--text-color); font-size: 1rem; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Hero Section */
+        .hero-section { padding-top: 160px; padding-bottom: 80px; background: radial-gradient(circle at top right, var(--primary-light), transparent 40%), radial-gradient(circle at bottom left, #ecfdf5, transparent 40%); overflow: hidden; }
+        .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        .hero-title { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; color: var(--navy-dark); font-weight: 800; }
+        .hero-title span { color: var(--primary-color); }
+        .hero-subtitle { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; font-weight: 500; }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: var(--transition); text-align: center; border: none; }
+        .btn-primary { background-color: var(--primary-color); color: white; box-shadow: 0 4px 12px rgba(255, 102, 179, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(255, 102, 179, 0.5); }
+        .btn-secondary { background-color: white; color: var(--navy-dark); border: 2px solid var(--border-color); }
+        .btn-secondary:hover { border-color: var(--primary-color); }
+        .btn-block { display: block; width: 100%; }
+        
+        /* About Section / Stats */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        /* Contact/Application Section */
+        .contact-wrapper { display: flex; flex-wrap: wrap; background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); }
+        .contact-info { flex: 1; min-width: 320px; background: var(--navy-dark); color: white; padding: 60px; }
+        .contact-info h3 { font-size: 2rem; margin-bottom: 20px; }
+        .contact-info p { color: #9CA3AF; margin-bottom: 30px; font-size: 1.1rem; }
+        
+        .contact-form { flex: 1.5; min-width: 320px; padding: 60px; background: var(--bg-light); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--navy-dark); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 1rem; transition: var(--transition); background: white; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(255, 102, 179, 0.2); }
+
+        .form-row { display: flex; gap: 15px; flex-wrap: wrap; }
+        .form-row .form-group { flex: 1; min-width: 150px; }
+        
+        .checkbox-group { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; }
+        .checkbox-group input[type="checkbox"] { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--primary-color); cursor: pointer; }
+        .checkbox-group label { margin-bottom: 0; font-weight: 400; font-size: 0.95rem; cursor: pointer; color: var(--text-muted); }
+        .checkbox-group label strong { color: var(--navy-dark); display: block; margin-bottom: 4px; }
+        
+        .section-divider { margin: 30px 0 20px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; font-size: 1.2rem; color: var(--navy-dark); font-weight: 700; }
+
+        /* Blog Section */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .blog-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); transition: var(--transition); display: flex; flex-direction: column; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary-light); }
+        .blog-img { width: 100%; height: 220px; object-fit: cover; border-bottom: 1px solid var(--border-color); }
+        .blog-content { padding: 30px; display: flex; flex-direction: column; flex-grow: 1; }
+        .blog-category { color: var(--primary-color); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px; display: block; letter-spacing: 0.5px; }
+        .blog-title { font-size: 1.3rem; color: var(--navy-dark); margin-bottom: 15px; font-weight: 800; line-height: 1.3; transition: color 0.3s ease; }
+        .blog-card:hover .blog-title { color: var(--primary-color); }
+        .blog-excerpt { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; flex-grow: 1; line-height: 1.6; }
+        .blog-link { color: var(--navy-dark); font-weight: 700; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s ease; text-decoration: none; }
+        .blog-link:hover { color: var(--primary-color); }
+        
+        /* Mobile Menu Button Styles */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--navy-dark);
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        @media (max-width: 991px) {
+            .hero-container, .about-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-title { font-size: 2.8rem; }
+            .contact-info, .contact-form { padding: 40px 20px; }
+            
+            /* Mobile Navbar Reset */
+            .mobile-menu-btn { display: block; }
+            
+            .nav-links { 
+                position: absolute; 
+                top: 100%; 
+                left: 0; 
+                width: 100%; 
+                background: white; 
+                flex-direction: column; 
+                align-items: center; 
+                padding: 0; 
+                max-height: 0; 
+                overflow: hidden; 
+                transition: all 0.3s ease; 
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid var(--border-color);
+            }
+            
+            .nav-links.active {
+                max-height: 400px;
+                padding: 20px 0;
+            }
+            
+            .nav-links a.btn {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                MakeMoneyStreaming<span class="dot">.</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-item">Why Join</a></li>
+                <li><a href="courses.html" class="nav-item">Free Courses</a></li>
+                <li><a href="quizzes.html" class="nav-item">Quizzes</a></li>
+                <li><a href="codes.html" class="nav-item">Codes</a></li>
+                <li><a href="resources.html" class="nav-item">Resources</a></li>
+                <li><a href="#apply" class="btn btn-primary nav-item" style="padding: 10px 24px; color: white;">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary-light); color: var(--navy-dark); padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; margin-bottom: 20px;">
+                    <i class="fas fa-heart" style="color: var(--primary-color);"></i> 100% Woman & Adult-Worker Owned
+                </div>
+                <h1 class="hero-title">Start Adult Streaming Safely & <span>Profitably.</span></h1>
+                <p class="hero-subtitle">Join an exclusive agency offering 1-on-1 mentorship and digital marketing support from a 10-year industry professional.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#apply" class="btn btn-primary">Start Your Application</a>
+                </div>
+            </div>
+            
+            <div class="hero-image" style="position: relative;">
+                <div style="background: white; padding: 40px 30px; border-radius: 20px; box-shadow: var(--shadow-lg); position: relative; z-index: 2; border: 1px solid var(--border-color);">
+                    <div style="text-align: center; margin-bottom: 25px;">
+                        <div style="width: 80px; height: 80px; background: var(--primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto;">
+                            <i class="fas fa-star" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                        </div>
+                        <h3 style="color: var(--navy-dark); font-size: 1.5rem; font-weight: 800; margin-bottom: 5px;">Elite Mentorship</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">10+ years of adult streaming and adult platform expertise.</p>
+                    </div>
+                    
+                    <div style="background: var(--bg-light); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 15px; margin-bottom: 15px; border: 1px solid var(--border-color);">
+                        <div style="width: 40px; height: 40px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+                            <i class="fas fa-shield-alt" style="color: var(--secondary-color); font-size: 1.2rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.95rem; color: var(--navy-dark); font-weight: 700;">100% Confidential</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Your privacy is strictly protected</p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: var(--bg-light); border-radius: 12px; padding: 15px; display: flex; align-items: center; gap: 15px; border: 1px solid var(--border-color);">
+                        <div style="width: 40px; height: 40px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+                            <i class="fas fa-chart-line" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.95rem; color: var(--navy-dark); font-weight: 700;">Maximized Earnings</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-muted);">Direct platform payouts</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative background elements for depth -->
+                <div style="position: absolute; top: -20px; right: -20px; width: 120px; height: 120px; background: var(--primary-light); border-radius: 50%; z-index: 1; opacity: 0.5;"></div>
+                <div style="position: absolute; bottom: -20px; left: -20px; width: 80px; height: 80px; background: #d1fae5; border-radius: 50%; z-index: 1; opacity: 0.7;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <div style="text-align: center;">
+                <h2 style="font-size: 2.5rem; color: var(--navy-dark); margin-bottom: 20px;">Avoid beginner mistakes. Stream with leverage.</h2>
+                <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 30px;">
+                    Getting started on your own means navigating platform algorithms, hardware decisions, and safety risks alone. 
+                    As a proudly woman and adult-worker owned agency, we understand the landscape firsthand. By signing up under our agency, you get direct access to a decade of platform experience and proven marketing strategies.
+                </p>
+                <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); text-align: left; max-width: 600px; margin: 0 auto;">
+                    <ul style="margin: 0;">
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.2rem; margin-top: 4px;"></i> 
+                            <div><b style="color: var(--navy-dark); font-size: 1.05rem;">Strategic Guidance:</b> <div style="color: var(--text-muted); margin-top: 2px;">Optimize your home setup, lighting, and hardware for maximum engagement.</div></div>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.2rem; margin-top: 4px;"></i> 
+                            <div><b style="color: var(--navy-dark); font-size: 1.05rem;">Hassle-Free Payouts:</b> <div style="color: var(--text-muted); margin-top: 2px;">Automated payments handled securely by the platform.</div></div>
+                        </li>
+                        <li style="margin-bottom: 0; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-color); font-size: 1.2rem; margin-top: 4px;"></i> 
+                            <div><b style="color: var(--navy-dark); font-size: 1.05rem;">Marketing Support:</b> <div style="color: var(--text-muted); margin-top: 2px;">Leverage our proven funnels to build your room traffic.</div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; color: var(--navy-dark); margin-bottom: 15px; font-weight: 800;">Creator Strategy & Insights</h2>
+                <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 650px; margin: 0 auto;">Leverage our free resources to optimize your setup, understand the algorithm, and maximize your streaming income.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <img src="https://placehold.co/600x400/ffcce5/ff66b3?text=Lighting+Guide" alt="Lighting setup guide" class="blog-img">
+                    <div class="blog-content">
+                        <span class="blog-category">Setup & Hardware</span>
+                        <h3 class="blog-title">The Ultimate Budget Lighting Setup for New Creators</h3>
+                        <p class="blog-excerpt">You don't need a $1,000 camera to look incredible on stream. Discover how to strategically use natural light and affordable ring lights to dramatically improve your visual quality.</p>
+                        <a href="courses.html" class="blog-link">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <img src="https://placehold.co/600x400/ecfdf5/10B981?text=First+30+Days" alt="First 30 days strategy" class="blog-img">
+                    <div class="blog-content">
+                        <span class="blog-category">Platform Strategy</span>
+                        <h3 class="blog-title">How to Maximize Your 'New Model' Tag Earnings</h3>
+                        <p class="blog-excerpt">The first 30 days are critical. Learn the exact streaming schedule and room-management techniques to capitalize on your initial traffic boost and build loyal spending regulars.</p>
+                        <a href="courses.html" class="blog-link">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <img src="https://placehold.co/600x400/f3f4f6/6B7280?text=Safety+Online" alt="Digital safety tips" class="blog-img">
+                    <div class="blog-content">
+                        <span class="blog-category">Privacy & Safety</span>
+                        <h3 class="blog-title">Protecting Your Digital Footprint While Broadcasting</h3>
+                        <p class="blog-excerpt">From VPNs and geoblocking to scrubbing your metadata, here are the essential privacy steps every creator must take before they ever hit the "Broadcast" button.</p>
+                        <a href="courses.html" class="blog-link">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="courses.html" class="btn btn-secondary">View All Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section (Powered by Formspree) -->
+    <section id="apply" class="section-padding bg-light">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 style="font-size: 2.8rem; line-height: 1.2; margin-bottom: 25px;">Join the Agency</h3>
+                    <p style="font-size: 1.25rem; line-height: 1.8; color: #D1D5DB;">Fill out the application to get started. All information is kept strictly confidential and is required to establish your secure profile.</p>
+                    
+                    <div style="margin-top: 50px; color: #E5E7EB;">
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 1: Submission</strong>
+                            Provide your basic information, platform display name choices, and streaming goals.
+                        </p>
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 2: Review & Invite</strong>
+                            We will review your submission and email you an official, secure platform onboarding link.
+                        </p>
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 3: Verification</strong>
+                            The platform's secure portal handles your final age verification and attaches your direct deposit account.
+                        </p>
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 4: Complete Onboarding and Training</strong>
+                            Finalize your streaming account by submitting all necessary compliance documents. You will need a proof of address that matches your identification to complete onboarding once you are within the streaming platform model interface. This can be a utility bill or a bank statement. It must show your full name and the address listed on your ID submitted for onboarding. While you're waiting for all of your documents to get verified by the streaming platform, we will direct you to our short trainings that will absolutely ensure you are set up for success for your first stream and avoid any compliance issues!
+                        </p>
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 5: Start Your First Stream!</strong>
+                            Start your first stream and start earning money! New creators who stream consistently during their first 30 days consistently make $60/ hour on average or even more. Utilize the "New Model" tag during your first 30 days to maximize earnings and keep your hourly averages high!
+                        </p>
+                        <p style="font-size: 1.15rem; margin-bottom: 30px; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 6: Get Paid!!!</strong>
+                            You will receive your first payout the following week after your first stream. Payday is on Thursday for ACH in USA. The platform pay period runs from 12:00AM Sun - Sat 11:59 PM. The platform runs on UTC, so check your time zone for the exact time when the pay period starts and ends for you.
+                        </p>
+                        <p style="font-size: 1.15rem; line-height: 1.7;">
+                            <strong style="color: white; font-size: 1.25rem; display: block; margin-bottom: 5px;">Step 7: Consistency is Key!</strong>
+                            Every Sunday your mentor will ask for your schedule. Provide the hours, days of the week, and times of day that you plan to stream. It is okay if this changes. We understand life happens. The goal is to provide a sense of accountability for models that create good streaming habits naturally.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/mzedjoon" method="POST">
+                        
+                        <!-- Formspree Honeypot (Invisible to humans, traps bots) -->
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        
+                        <div class="section-divider">Legal & Contact Information</div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First name</label>
+                                <input type="text" name="First_Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Middle name</label>
+                                <input type="text" name="Middle_Name" placeholder="Or N/A" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last name</label>
+                                <input type="text" name="Last_Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date of birth</label>
+                                <input type="date" name="DOB" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Country of residence (matches ID)</label>
+                                <input type="text" name="Country" placeholder="e.g. United States" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email address</label>
+                                <input type="email" name="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                <input type="tel" name="Phone" required>
+                            </div>
+                        </div>
+
+                        <div class="section-divider">Profile & Appearance</div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select name="Gender" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Trans m2f">Trans m2f</option>
+                                    <option value="Trans f2m">Trans f2m</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Sexual orientation</label>
+                                <select name="Orientation" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="straight">Straight</option>
+                                    <option value="bisexual">Bisexual</option>
+                                    <option value="lesbian">Lesbian</option>
+                                    <option value="gay">Gay</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Ethnicity</label>
+                                <select name="Ethnicity" required>
+                                    <option value="" disabled selected>Select only one...</option>
+                                    <option value="White">White</option>
+                                    <option value="Black">Black</option>
+                                    <option value="Hispanic">Hispanic</option>
+                                    <option value="Asian">Asian</option>
+                                    <option value="East Indian">East Indian</option>
+                                    <option value="Native American">Native American</option>
+                                    <option value="Middle-Eastern">Middle-Eastern</option>
+                                    <option value="Pacific Islander">Pacific Islander</option>
+                                    <option value="Mediterranean">Mediterranean</option>
+                                    <option value="European">European</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Body type</label>
+                                <select name="Body_Type" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Slim / Slender">Slim / Slender</option>
+                                    <option value="Athletic">Athletic</option>
+                                    <option value="Petite">Petite</option>
+                                    <option value="More to love / BBW">More to love / BBW</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Hair color</label>
+                                <select name="Hair_Color" required>
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="black">Black</option>
+                                    <option value="blonde">Blonde</option>
+                                    <option value="brunette">Brunette</option>
+                                    <option value="dyed">Dyed</option>
+                                    <option value="red">Red</option>
+                                    <option value="salt and pepper">Salt and pepper</option>
+                                    <option value="Silver">Silver</option>
+                                    <option value="White">White</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Display age</label>
+                                <input type="number" name="Display_Age" min="18" max="99" required placeholder="Age shown on profile">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Display name options</label>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px;">Please provide at least 5 different options in case one or more is taken. If all are taken, we will email you.</p>
+                            <input type="text" name="Display_Name_1" placeholder="Option 1" required style="margin-bottom: 8px;">
+                            <input type="text" name="Display_Name_2" placeholder="Option 2" required style="margin-bottom: 8px;">
+                            <input type="text" name="Display_Name_3" placeholder="Option 3" required style="margin-bottom: 8px;">
+                            <input type="text" name="Display_Name_4" placeholder="Option 4" required style="margin-bottom: 8px;">
+                            <input type="text" name="Display_Name_5" placeholder="Option 5" required>
+                        </div>
+
+                        <div class="section-divider">Streaming Details</div>
+
+                        <div class="form-group">
+                            <label>Hours available to stream per week</label>
+                            <input type="text" name="Hours_Available" placeholder="e.g. 15-20 hours" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Describe your streaming space</label>
+                            <textarea name="Space_Description" rows="2" placeholder="Tell us about the room, lighting, and privacy setup you plan to use..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Will you be streaming alone or with a partner? Or both?</label>
+                            <select name="Streaming_Partners" id="streaming-partners" required>
+                                <option value="" disabled selected>Select...</option>
+                                <option value="Alone">Alone</option>
+                                <option value="Partner">With a partner</option>
+                                <option value="Both">Both</option>
+                            </select>
+                        </div>
+
+                        <div class="checkbox-group" id="partner-disclaimer-group" style="display: none; background: #fff1f2; padding: 15px; border-radius: 8px; border: 1px solid #fda4af; margin-top: -10px; margin-bottom: 20px;">
+                            <input type="checkbox" id="partner-disclaimer" name="Partner_Verification_Agreement" value="Agreed">
+                            <label for="partner-disclaimer" style="color: #be123c;"><strong>Partner Verification Required</strong>I understand that no unverified individuals can be on stream or in the room while I am streaming until they have submitted identity verification to the streaming platform. I understand that partners do not have to go through the process of becoming a model or applying to the studio unless they would also like to stream alone. My streaming partners may appear as guests on my stream once age and identity verification is completed by the platform. I understand I must reach out to my agency before adding or streaming with a new partner. By checking the box, I acknowledge, understand, and agree to all of these terms.</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Do you have a niche decided? What is it? Example: housewife, MILF, student, etc.</label>
+                            <textarea name="Why_Good_Fit" rows="3" required></textarea>
+                        </div>
+
+                        <div class="section-divider">Agreements</div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" name="Newsletter_Opt_In" value="Yes" required>
+                            <label for="newsletter"><strong>Newsletter & Updates</strong>Yes, sign me up for tips, tricks, and information about platform contests sent directly to my inbox.</label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="disclaimer" name="Voluntary_Disclaimer" value="Agreed" required>
+                            <label for="disclaimer"><strong>Mandatory Disclaimer</strong>This studio is not in any way forcing or coercing any performer to act as a performer on this website. All our performers want to be performers and are acting completely voluntarily.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 30px;">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted);">
+        <div class="container">
+            <p>© 2026 Make Money Streaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Partner Disclaimer Logic
+            const partnerSelect = document.getElementById('streaming-partners');
+            const disclaimerGroup = document.getElementById('partner-disclaimer-group');
+            const disclaimerCheckbox = document.getElementById('partner-disclaimer');
+
+            if (partnerSelect) {
+                partnerSelect.addEventListener('change', function() {
+                    // Show the mandatory checkbox if they select Partner or Both
+                    if (this.value === 'Partner' || this.value === 'Both') {
+                        disclaimerGroup.style.display = 'flex';
+                        disclaimerCheckbox.required = true;
+                    } else {
+                        // Hide and uncheck if they select Alone
+                        disclaimerGroup.style.display = 'none';
+                        disclaimerCheckbox.required = false;
+                        disclaimerCheckbox.checked = false;
+                    }
+                });
+            }
+            
+            // Mobile Menu Logic
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const navLinks = document.getElementById('nav-links');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            if (mobileBtn && navLinks) {
+                mobileBtn.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    const icon = mobileBtn.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times'); // Change to X
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars'); // Change back to hamburger
+                    }
+                });
+
+                // Close menu when clicking a link
+                navItems.forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        navLinks.classList.remove('active');
+                        const icon = mobileBtn.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
