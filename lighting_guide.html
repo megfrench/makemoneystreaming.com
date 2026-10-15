@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to strategically use natural light and affordable ring lights to dramatically improve your visual quality on stream without a massive budget.">
+    <title>The Ultimate Budget Lighting Setup | Make Money Streaming</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #ff66b3;
+            --primary-dark: #ff4da6;
+            --primary-light: #ffcce5;
+            --secondary-color: #10B981;
+            --navy-dark: #0a192f;
+            --text-color: #1F2937;
+            --text-muted: #6B7280;
+            --bg-white: #FFFFFF;
+            --bg-light: #F9FAFB;
+            --border-color: #E5E7EB;
+            --font-main: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-main); color: var(--text-color); line-height: 1.8; background-color: var(--bg-white); -webkit-font-smoothing: antialiased; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        
+        .container { width: 90%; max-width: 800px; margin: 0 auto; padding: 0 15px; }
+        .bg-light { background-color: var(--bg-light); }
+        
+        /* Navbar Styling */
+        .navbar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: white; padding: 15px 0; border-bottom: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; width: 90%; margin: 0 auto; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--navy-dark); }
+        .logo .dot { color: var(--primary-color); }
+        .nav-links { display: flex; align-items: center; gap: 30px; }
+        .nav-links a { font-weight: 600; color: var(--text-color); font-size: 1rem; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* Article Header */
+        .article-header { padding-top: 160px; padding-bottom: 40px; background: radial-gradient(circle at top right, var(--primary-light), transparent 40%), radial-gradient(circle at bottom left, #ecfdf5, transparent 40%); text-align: center; }
+        .article-category { color: var(--primary-color); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; display: inline-block; background: white; padding: 6px 16px; border-radius: 20px; box-shadow: var(--shadow-md); }
+        .article-title { font-size: 2.8rem; color: var(--navy-dark); font-weight: 800; margin-bottom: 20px; line-height: 1.2; }
+        .article-meta { color: var(--text-muted); font-size: 0.95rem; display: flex; justify-content: center; gap: 20px; }
+
+        /* Article Content Formatting */
+        .article-body { background: white; padding: 60px 40px; border-radius: 20px; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color); margin-top: -30px; position: relative; z-index: 2; margin-bottom: 60px; }
+        .article-body h2 { font-size: 1.8rem; color: var(--navy-dark); margin-top: 40px; margin-bottom: 20px; font-weight: 700; }
+        .article-body h3 { font-size: 1.3rem; color: var(--navy-dark); margin-top: 30px; margin-bottom: 15px; font-weight: 700; }
+        .article-body p { margin-bottom: 20px; font-size: 1.05rem; color: var(--text-color); }
+        .article-body ul { margin-bottom: 20px; padding-left: 20px; list-style: disc; }
+        .article-body li { margin-bottom: 10px; font-size: 1.05rem; }
+        
+        .callout-box { background: var(--bg-light); border-left: 4px solid var(--primary-color); padding: 25px; border-radius: 0 12px 12px 0; margin: 30px 0; }
+        .callout-box p { margin-bottom: 0; font-weight: 500; color: var(--navy-dark); }
+
+        footer { padding: 40px 0; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted); background: white; }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 2.2rem; }
+            .article-body { padding: 30px 20px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                MakeMoneyStreaming<span class="dot">.</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">Why Join</a></li>
+                <li><a href="courses.html">Free Courses</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="codes.html">Codes</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="index.html#apply" class="btn btn-primary" style="background-color: var(--primary-color); color: white; padding: 10px 24px; border-radius: 8px; font-weight: 600;">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container" style="max-width: 900px;">
+            <span class="article-category">Setup & Hardware</span>
+            <h1 class="article-title">The Ultimate Budget Lighting Setup for New Creators</h1>
+            <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> Updated 2026</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+                <span><i class="fas fa-lightbulb" style="color: #FBBF24;"></i> Studio Setup</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="article-body">
+            <p>One of the biggest misconceptions in the streaming industry is that you need a $1,500 DSLR camera to look good on screen. In reality, a $100 webcam with excellent lighting will consistently outperform a $1,000 camera in a poorly lit room.</p>
+            
+            <p>Lighting is your best friend. It smooths out your skin, makes your eyes pop, and gives your stream a high-definition, professional feel. Here is how to achieve a premium studio look without draining your bank account.</p>
+
+            <h2>1. Master Your Key Light (The Ring Light)</h2>
+            <p>Your "Key Light" is the primary source of light hitting your face. For most creators, an 18-inch ring light is the best budget-friendly investment. However, simply turning it on and pointing it at your face isn't enough.</p>
+            <ul>
+                <li><strong>Positioning:</strong> Place the ring light directly behind and slightly above your webcam, pointing down at a 45-degree angle. This fills in under-eye shadows and creates a flattering "catchlight" in your eyes.</li>
+                <li><strong>Temperature:</strong> Most ring lights offer warm (yellow), cool (blue), and daylight (white) settings. For the most natural skin tones, use the daylight or a slightly warm setting. Avoid stark, cool lighting, as it can make you look washed out or clinical.</li>
+            </ul>
+
+            <div class="callout-box">
+                <p><i class="fas fa-magic" style="color: var(--primary-color);"></i> <strong>Pro Tip:</strong> If your ring light feels too harsh or is blinding you, bounce it off a white wall or drape a thin, white t-shirt over it (carefully!) to diffuse the light for a much softer, glowing effect.</p>
+            </div>
+
+            <h2>2. Utilize Natural Light Strategically</h2>
+            <p>If you stream during the day, the sun is the best and cheapest light source available—but you have to use it correctly. <strong>Never</strong> sit with a bright window behind you. This will blow out the background and turn you into a dark silhouette.</p>
+            <p>Instead, position your setup so you are facing the window. Let the natural daylight act as a massive, free key light. You can then use a ring light at a lower brightness to fill in any remaining shadows.</p>
+
+            <h2>3. Create Depth with Background Lighting</h2>
+            <p>A common mistake is having a perfectly lit face but a completely dark, cavernous background. This makes your stream look flat. To make your space look like a high-end studio, you need to create depth.</p>
+            <ul>
+                <li><strong>Accent Lamps:</strong> Place a small, warm desk lamp or floor lamp in the background. It breaks up the darkness and makes the room feel cozy and inviting.</li>
+                <li><strong>LED Strips:</strong> Affordable LED light strips or smart bulbs can be used to cast a splash of color (like pink, purple, or teal) against a blank wall. This immediately elevates the production value of your room.</li>
+            </ul>
+
+            <h2>4. Lock Your Camera's Auto-Exposure</h2>
+            <p>Webcams try to auto-adjust their exposure based on the brightest object in the room. If your lighting changes (e.g., a cloud passes over the sun, or you lean forward), the camera will rapidly flicker and adjust, which looks incredibly unprofessional.</p>
+            <p>Once your lighting is set, open your webcam's software settings and <strong>turn off auto-exposure and auto-white balance</strong>. Lock them into place so your stream maintains a consistent, high-quality look for your entire broadcast.</p>
+
+            <div style="margin-top: 50px; text-align: center; background: var(--bg-light); padding: 40px; border-radius: 16px; border: 1px solid var(--border-color);">
+                <h3 style="margin-top: 0; color: var(--navy-dark);">Want a personalized setup review?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 25px;">Apply to Make Money Streaming today. We review our models' room setups and provide direct feedback to ensure you look incredible on day one.</p>
+                <a href="index.html#apply" style="display: inline-block; background-color: var(--primary-color); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; box-shadow: var(--shadow-md);">Start Your Application</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container" style="max-width: 1200px;">
+            <p>© 2026 Make Money Streaming. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
